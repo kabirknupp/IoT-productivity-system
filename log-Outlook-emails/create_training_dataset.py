@@ -21,7 +21,7 @@ from pprint import pprint #stands for pretty print
 
 # account credentials
 username = "kk6118@ic.ac.uk"
-password = "" #PASSWORD HERE
+password = "Sandhya1!!!"
 
 scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
 creds = ServiceAccountCredentials.from_json_keyfile_name("creds.json", scope)
