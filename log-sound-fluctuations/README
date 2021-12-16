@@ -1,0 +1,1 @@
+This is the ESP32 code which calculates the fluctuations in sound, and logs them to Google sheets. The code also controls an RGB LED to shine violet when the noise fluctuations are too high, and shine bright white upon receiving an e-mail with importance above 5.
