@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "IoT_style.css">
+    <title>IoT page</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+
+
+
+<style>
+
+
+</style>
+<body>
+
+
+    <style>
+
+    </style>
+
+
+<h1>LOG A TASK!</h1>
+<div class = "center"><b>Today</b></div>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>          <form>          <div class="input-row">
+            <label for="task">Log a new task:</label>
+            <input type="text" name="task" id="task" autocomplete="off" placeholder="Enter task here..." required/>
+          </div></th>
+          <th>       <div class="input-row">
+            <label for="difficulty"> Difficulty: </label>
+            <input type="number" name="difficulty" id="difficulty" autocomplete="off" placeholder="(1-10)?" required/>
+          </div></th>
+          <th><button id="clickMe" class="button" onclick="startStop()">Start Timer</button></th>
+        </form>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+        <div id="display">
+            00:00:00
+        </div>
+    
+    <script src="Table_rows.js"></script>
+    <script type="text/javascript" src="TimerKanBan.js"></script>
+
+    <p id="github"> click <a href="https://github.com/kabirknupp/IoT-productivity-system"><i class="seemore">here</i></a>  to be taken to my github repository... <br> oh, and check out the graphs below!</p>
+
+    <div id="resize">
+    <canvas id = "myChart" width="900" height="150"> </canvas>
+    </div>
+
+    <div id="resize">
+    <canvas id = "SoundChart" width="1000" height="200"> </canvas>
+  </div>
+
+  <div id="resize">
+    <canvas id = "EmailChart" width="1000" height="200"> </canvas>
+  </div>
+
+    <div id="resize">
+    <canvas id = "ProductivityChart" width="1000" height="200"> </canvas>
+  </div>
+
+   <script src="charting_data.js"></script>
+    
+   <section class="spacer"></section>
+
+   
+   <b><p id = "homebutton"><a href = "/index.html">home</a></p></b>
+
+</body>
+</html>
